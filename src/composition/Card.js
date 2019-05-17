@@ -2,7 +2,6 @@ import React from'react';
 import './Card.css';
 
 function Card(props) {
-    console.log(props);
     return (
         <div className='Card'>
             <h3>
@@ -11,6 +10,11 @@ function Card(props) {
             <p>
                 {props.content}
             </p>
+            <button 
+                type='button'
+                onClick={() => props.onDeleteCard(props.id)}>
+                Delete Card
+            </button>
         </div>
     )
 }

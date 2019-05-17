@@ -12,7 +12,7 @@ describe('List component', () => {
   
     it('renders the UI as expected', () => {
       const tree = renderer
-        .create(<List header="Sample Header" cards={[{title: "Sample card", content: "lorem ipsum"}]} />)
+        .create(<List header="Sample Header" cards={[{title: "Sample card title", content: "lorem ipsum"}]} />)
         .toJSON();
       expect(tree).toMatchSnapshot();  
     });
